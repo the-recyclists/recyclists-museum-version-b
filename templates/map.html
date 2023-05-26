@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+  <div id="map"> map </div>
+</main>
+{% endblock %}
+
+{% block js %}
+<script type="module" src="{{ url_for('static', filename='map.js') }}"></script>
+{% endblock %}

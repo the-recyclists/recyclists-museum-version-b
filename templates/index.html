@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<main class="content">
+  <h1>
+    Welcome! 🚲
+  </h1>
+
+  <section>
+    <h2>
+      An introduction to the urban design of Amsterdam
+    </h2>
+    <p>
+      From small towns to major cities, urban infrastructures impact the lives of citizens
+      and the entire economies of municipalities. Yet, countless municipalities have
+      scarred their cities with car-centric urban infrastructures, resulting in car
+      dependency, reduced health and happiness of citizens, weaker economies and
+      increasing infrastructure costs.
+      <br>
+      It doesn’t have to be like this. Throughout the 60s, Amsterdam was a majorly
+      car-centric city. This changed with urban design reforms following protests from
+      citizens. The goal of this open guide is to have you explore Amsterdam as a local
+      would, with one key takeaway: Amsterdam is not a special case, any city can and
+      should free itself from the shackles of car dependency.
+    </p>
+  </section>
+
+  <section>
+    <h2>The open museum</h2>
+    <p>
+      Click the ‘Play’ button below to experience Amsterdam through the eyes of a local.
+      Go through the different points in the city and play the missions given to learn
+      more!
+    </p>
+  </section>
+
+  <a href="{{ url_for("map_page") }}" type="button" class="btn btn-success">
+    Play →
+  </a>
+
+</main>
+{% endblock %}

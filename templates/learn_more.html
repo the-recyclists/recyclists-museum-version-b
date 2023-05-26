@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="content">
+  <h1>Reclaim your own streets!</h1>
+  <p>
+    Cities around the world need to change now.
+    <br>
+    Considering the climate crisis and current global developments this is an extremely
+    relevant and pressing issue. You as a citizen have the ability to influence your local
+    government to take action and transform your city towards a people centric
+    infrastructure.
+  </p>
+  <p>
+    Explore the Urban Cycling Institute and its courses to learn more about how cities can
+    undergo this change and how you can help!
+  </p>
+  <a href="https://urbancyclinginstitute.com/online-courses/" type="button"
+    class="btn btn-success" id="learn_more_button">
+    Urban cycling coursera courses
+  </a>
+</main>
+{% endblock %}
+{% block js %}
+<script type="module" src="{{ url_for('static', filename='button.js') }}"></script>
+{% endblock %}
